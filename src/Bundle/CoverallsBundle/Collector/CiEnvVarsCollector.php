@@ -217,7 +217,7 @@ class CiEnvVarsCollector
         if (isset($this->env['BUILDKITE']) && $this->env['BUILDKITE'] && isset($this->env['BUILDKITE_BUILD_NUMBER'])) {
             $this->env['CI_BRANCH'] = $this->env['BUILDKITE_BRANCH'];
             $this->env['CI_BUILD_NUMBER'] = $this->env['BUILDKITE_BUILD_NUMBER'];
-            $this->env['CI_JOB_ID'] = $this->env['BUILDKITE_BUILD_ID'];
+            $this->env['CI_JOB_ID'] = $this->env['BUILDKITE_JOB_ID'];
             $this->env['CI_NAME'] = 'Buildkite';
             $this->env['CI_PULL_REQUEST'] = $this->env['BUILDKITE_PULL_REQUEST'];
 
