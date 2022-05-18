@@ -229,6 +229,8 @@ class CiEnvVarsCollector
             $this->readEnv['BUILDKITE_PULL_REQUEST'] = $this->env['BUILDKITE_PULL_REQUEST'];
             $this->readEnv['CI_NAME'] = $this->env['CI_NAME'];
         }
+
+        return $this;
     }
 
     /**
