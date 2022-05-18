@@ -224,7 +224,7 @@ class CiEnvVarsCollector
             // backup
             $this->readEnv['BUILDKITE'] = $this->env['BUILDKITE'];
             $this->readEnv['BUILDKITE_BRANCH'] = $this->env['BUILDKITE_BRANCH'];
-            $this->readEnv['BUILDKITE_BUILD_ID'] = $this->env['BUILDKITE_BUILD_ID'];
+            $this->readEnv['BUILDKITE_JOB_ID'] = $this->env['BUILDKITE_JOB_ID'];
             $this->readEnv['BUILDKITE_BUILD_NUMBER'] = $this->env['BUILDKITE_BUILD_NUMBER'];
             $this->readEnv['BUILDKITE_PULL_REQUEST'] = $this->env['BUILDKITE_PULL_REQUEST'];
             $this->readEnv['CI_NAME'] = $this->env['CI_NAME'];
